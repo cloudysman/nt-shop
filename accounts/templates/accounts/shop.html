@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT Shop</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="{% static 'img/logo.png' %}" class="logo" alt=""></a>
+
+         <div>
+            <ul id="navbar">
+             <li><a href="{% url 'shop' %}">TRANG CHỦ</a></li>
+             <li><a class="active" href="{% url 'shop' %}">CỬA HÀNG <i class="fa fa-caret-down"></i></a></li>
+             <li><a href="#">BRUSHES</a></li>
+             <li><a href="#">MAIR</a></li>
+             <li><a href="#">ACCESSORIES</a></li>
+             <li><a href="#">BLOG</a></li>
+             {% if user.is_authenticated %}
+             <li><a href="{% url 'logout' %}">LOG OUT</a></li>
+             {% else %}
+             <li><a href="{% url 'login' %}">LOG IN</a></li>
+             {% endif %}
+             <li id="lg-bag"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+             <li id="lg-search"><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+         </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <img src="{% static 'img/features/f1.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="Products/sproduct1.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/features/f2.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 2</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="sproduct2.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/features/f3.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 3</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="sproduct3.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/features/f4.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 4</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="sproduct4.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/features/f5.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 5</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="sproduct5.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/features/f6.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 6</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="sproduct6.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/features/f7.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 7</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="sproduct7.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="{% static 'img/features/f8.png' %}" alt="">
+                <div class="des">
+                    <span>NT SHOP</span>
+                    <h5>Cartoon Astronaut T-Shirts 8</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>150.000 VND</h4>
+                </div>
+                <a href="sproduct8.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="{% static 'img/logo.png' %}" alt="">
+            <h4>Liên hệ</h4>
+            <p><strong>Địa chỉ:</strong> Hà Nội</p>
+            <p><strong>Số điện thoại:</strong> 0123 456 789</p>
+            <p><strong>Giờ làm việc:</strong> 10:00 -18:00, Thứ 2 - Thứ 7 hàng tuần</p>
+            <div class="follow">
+                <h4>Theo dõi chúng tôi</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Về chúng tôi</h4>
+            <a href="#">Thông tin giao hàng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản và điều kiện</a>
+            <a href="#">Liên hệ</a>                           
+        </div>
+        <div class="col">
+            <h4>Tài khoản của tôi</h4>
+            <a href="#"> Đăng nhập</a>
+            <a href="#">Xem giỏ hàng</a>
+            <a href="#">Sản phẩm yêu thích</a>
+            <a href="#">Theo dõi đơn hàng</a> 
+            <a href="#">Hỗ trợ</a>                          
+        </div>
+
+        <div class="col install">
+            <h4>Tải app</h4>
+            <p>Bằng App Store hoặc Google play</p>
+            <div class="row">
+                <img src="{% static 'img/pay/app.jpg' %}" alt="">
+                <img src="{% static 'img/pay/play.jpg' %}" alt="">
+            </div>
+            <p>Cổng thanh toán bảo mật</p>
+            <img src="{% static 'img/pay/pay.png' %}" alt="">
+        </div>
+        <div class="copyright"> 
+            <p>@ 2024, NT Shop</p>
+        </div>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

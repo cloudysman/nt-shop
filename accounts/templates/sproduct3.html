@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT Shop</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+         <div>
+            <ul id="navbar">
+             <li><a href="/index.html">HOME</a></li>
+             <li><a class="active" href="/shop.html">SHOP <i class="fa fa-caret-down"></i></a> </li>
+             <li><a href="">BRUSHES</a></li>
+             <li><a href="">MAIR</a></li>
+             <li><a href="">ACCESSSORIES</a></li>
+             <li><a href="">BLOG</a></li>
+             <li><a href="/login.html">LOG IN</a></li>
+             <li id="lg-bag"><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+             <li id="lg-search"><a href=""><i class="fa fa-search"></i></a></li>
+
+            </ul>
+         </div>
+         
+    </section>
+
+
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/features/f3.png" width="90%" id="MainImg" alt="">
+            
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/productdetail/f3/f31.png" width="90%" class="small-img" alt="">
+                </div>
+    
+                <div class="small-img-col">
+                    <img src="img/productdetail/f3/f32.png" width="90%" class="small-img" alt="">
+                </div>
+    
+                <div class="small-img-col">
+                    <img src="img/productdetail/f3/f33.png" width="90%" class="small-img" alt="">
+                </div>
+    
+                <div class="small-img-col">
+                    <img src="img/productdetail/f3/f34.png" width="90%" class="small-img" alt="">
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="single-pro-details" >
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T Shirts</h4>
+            <h2>150.000 VND</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>XS</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz.
+                 per sq .yd.fabric constructed from 100% cotton,this classic fit preshrunk
+                jersy knit provides unmatched comfort with each wear.
+                Featuring a taped neck and shoulder, and a seamless double-needle collar,
+                and available in a range of colors,it offfers it all in the ultimate head-turning package
+            </span>
+        </div>
+    </section>
+
+
+
+      <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4 style="color:white">Liên hệ</h4>
+            <p style="color:white"><strong>Địa chỉ:</strong> Hà Nội</p>
+            <p style="color:white"><strong>Số điện thoại:</strong> 0123 456 789</p>
+            <p style="color:white"><strong>Giờ làm việc:</strong> 10:00 -18:00, Thứ 2 - Thứ 7 hàng tuần</p>
+            <div class="follow">
+                <h4 style="color:white">Theo dõi chúng tôi</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <h4 style="color:white">Về chúng tôi</h4>
+                <a style="color:white", href="#">Thông tin giao hàng</a>
+                <a style="color:white", href="#">Chính sách bảo mật</a>
+                <a style="color:white", href="#">Điều khoản và điều kiện</a>
+                <a style="color:white", href="#">Liên hệ</a>                           
+            </div>
+            <div class="col">
+                <h4 style="color:white">Tài khoản của tôi</h4>
+                <a style="color:white", href="#"> Đăng nhập</a>
+                <a style="color:white", href="#">Xem giỏ hàng</a>
+                <a style="color:white", href="#">Sản phẩm yêu thích</a>
+                <a style="color:white", href="#">Theo dõi đơn hàng</a> 
+                <a style="color:white", href="#">Hỗ trợ</a>                          
+            </div>
+
+            <div class="col install">
+                <h4 style="color:white">Tải app</h4>
+                <p style="color:white">Bằng App Store hoặc Google play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="">
+                    <img src="img/pay/play.jpg" alt="">
+                </div>
+                <p style="color:white">Cổng thanh toán bảo mật</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+            <div  class="copyright"> 
+                <p style="color:white">@ 2024,NT Shop</p>
+            </div>
+      </footer>
+      <script>
+        var MainImg =document.getElementById("MainImg");
+        var smallimg=document.getElementsByClassName("small-img");
+    
+        smallimg[0].onclick =function(){
+            MainImg.src=smallimg[0].src;
+                }
+    
+                smallimg[1].onclick =function(){
+            MainImg.src=smallimg[1].src;
+                }
+    
+                smallimg[2].onclick =function(){
+            MainImg.src=smallimg[2].src;
+                }
+    
+                smallimg[3].onclick =function(){
+            MainImg.src=smallimg[3].src;
+                }
+    </script>
+    <script src="script.js"></script>
+</body>
+ </html>
